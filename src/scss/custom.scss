@@ -1,0 +1,172 @@
+@import "./node_modules/materialize-css/sass/materialize.scss";
+@import "fonts.scss";
+
+nav .button-collapse i{
+  line-height: .75em !important;
+}
+
+$primary-color: color("light-green", "accent-2");
+$primary-color-light: false;
+$primary-color-dark: false;
+@if not $primary-color-light {
+  $primary-color-light: lighten($primary-color, 15%);
+}
+@if not $primary-color-dark {
+  $primary-color-dark: darken($primary-color, 15%);
+}
+$secondary-color: color("black", "lighten-1");
+$success-color: color("green", "base");
+$error-color: color("red", "base");
+
+
+  $link-color: color("light-blue", "darken-4");
+
+.primary-color {
+  @extend .light-green, .accent-2
+}
+
+.secondary-color {
+  @extend .black, .lighten-2
+}
+
+
+.primary-color-text {
+  @extend .black-text, .text-darken-2
+}
+
+.secondary-color-text {
+  @extend .light-green-text, .text-accent-2
+}
+
+.content-text > *, .context-text strong, .context-text em{
+  @extend .secondary-color-text
+}
+
+
+.context-text a{
+  @extend .link-color
+}
+
+.link-color{
+  @extend .light-blue-text, .text-darken-4
+}
+
+img.brand-logo{
+  padding-top: 5px;
+  padding-left: 10px;
+  max-width: 90%;
+  max-height: 90%;
+}
+
+body *{
+  font-family: "Yoster Island";
+}
+
+.nav-content-title{
+  margin-top: auto;
+  margin-bottom: auto;
+  font-size: 2em;
+  height: 100%;
+}
+
+.social-media-icon:hover{
+  color: darken($primary-color, 50%);
+}
+
+.link-color:hover{
+  color: lighten($link-color, 25%) !important;
+}
+
+main{
+  background-color: $secondary-color;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+img.bands{
+  max-height: 450px;
+  width: auto;
+}
+
+div.social-media-row{
+  margin-top: -6em;
+}
+
+.social-media > i {
+  padding: 0.75em;
+  border-width: thin;
+  border: none;
+  border-radius: 1em;
+}
+
+a.social-media-row > i{
+  border-width: thin;
+  border: none;
+
+}
+
+a.social-media-row{
+  padding: 0.5em;
+  border-radius: 0.25em;
+  :hover{
+    color: darken($primary-color, 50%);
+  }
+}
+
+img.gallery{
+  max-height: 300px;
+
+  min-height: 300px;
+  width: auto;
+}
+
+ul.faq{
+
+  li {
+    font-size: 2em;
+  }
+  ul > li {
+    font-size: 1em;
+    margin-left: 2em;
+    list-style-type: disc;
+
+
+  }
+}
+
+.context-text.pages li {
+  margin-left: 2em;
+}
+.rounded{
+  border-radius: 5px;
+}
+
+.page-content{
+  padding-left: 2em;
+  padding-top: 1em;
+}
+
+.front-page > hr{
+  border-color: $primary-color;
+  border-width: thick;
+  border-style: dashed;
+}
+
+.page-content .title{
+  font-size: 3em;
+  @extend .secondary-color-text;
+  text-transform: capitalize;
+}
+
+
+.title-stroke{
+  font-weight: 900 !important;
+  -webkit-text-stroke: 1px black;
+}
+
+.center-image{
+  margin-left: auto;
+  margin-right: auto;
+}

@@ -1,0 +1,12 @@
+{{ partial "header" . }}
+
+<div class="{{ .Title }} {{ .Section | urlize }}">
+  <h1 class="secondary-color-text">{{ .Title }}</h1>
+  {{ if .Data.Pages }}
+  {{ partial "gallery" .Data.Pages }}
+  {{ else }}
+  <p class="secondary-color-text"> Information coming soon!</p>
+  {{ end }}
+</div>
+
+{{ partial "footer" . }}

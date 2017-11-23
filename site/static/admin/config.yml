@@ -1,0 +1,126 @@
+backend:
+  name: git-gateway
+  #repo: magfest/magstock-site # Path to your Github repository
+  branch: master # Branch to update (master by default)
+
+media_folder: "src/img/uploads" # Folder where user uploaded files should go
+public_folder: "img/uploads"
+
+collections: # A list of collections the CMS should be able to edit
+
+  - name: "guests"
+    label: "Guests"
+    folder: "site/content/guests"
+    create: true
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Cover Image", name: "image", widget: "image"}
+      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Published Date", name: "publishDate", widget: "datetime"}
+      - name: "icons"
+        label: "Social Media Icon"
+        widget: "list"
+        required: false
+        fields:
+          - {label: "Service Name", name: "title", widget: "string", required: false}
+          - {label: "Service URL", name: "url", widget: "string", required: false}
+          - {label: "Service Icon Available Here: http://fontawesome.io/icons/", name: "icon", widget: "string", required: false, default: "compass"}
+
+  - name: "bands"
+    label: "Bands"
+    folder: "site/content/bands"
+    create: true
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Cover Image", name: "image", widget: "image"}
+      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Published Date", name: "publishDate", widget: "datetime"}
+      - name: "icons"
+        label: "Social Media Icon"
+        widget: "list"
+        required: false
+        fields:
+          - {label: "Service Name", name: "title", widget: "string", required: false}
+          - {label: "Service URL", name: "url", widget: "string", required: false}
+          - {label: "Service Icon Available Here: http://fontawesome.io/icons/", name: "icon", widget: "string", required: false, default: "compass"}
+
+  - name: "visualists"
+    label: "Visualists"
+    folder: "site/content/visualists"
+    create: true
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Cover Image", name: "image", widget: "image"}
+      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Published Date", name: "publishDate", widget: "datetime"}
+      - name: "icons"
+        label: "Social Media Icon"
+        widget: "list"
+        required: false
+        fields:
+          - {label: "Service Name", name: "title", widget: "string", required: false}
+          - {label: "Service URL", name: "url", widget: "string", required: false}
+          - {label: "Service Icon Available Here: http://fontawesome.io/icons/", name: "icon", widget: "string", required: false, default: "compass"}
+
+  - name: "faq"
+    label: "Frequently Asked Questions"
+    title: "Frequently Asked Questions"
+    folder: "site/content/faq"
+    create: true
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Weight", name: "weight", widget: "number"}
+
+  - name: "pages"
+    label: "Pages"
+    folder: "site/content/pages"
+    create: true
+    fields:
+      - {label: "Title", name: "title", widget: "string", tagname: "h1", required: false}
+      - {label: "Body", name: "body", widget: "markdown", required: false}
+      - {label: "URL", name: "url", widget: "string"}
+
+  - name: "index"
+    label: "Homepage"
+    folder: "site/content"
+    create: false
+    fields:
+      - {label: "Title", name: "title", widget: "string", tagname: "h1"}
+      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "URL", name: "url", widget: "string"}
+      - name: "section"
+        label: "Front Page Content Section"
+        widget: "list"
+        required: false
+        fields:
+          - {label: "Title", name: "title", widget: "string", required: true}
+          - {label: "Content", name: "body", widget: "markdown", required: false}
+          - {label: "Weight", name: "weight", widget: "number", default: "0", required: false}
+
+  - name: "sidebar"
+    label: "Sidebar Items"
+    folder: "site/content/sidebar"
+    create: true
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "URL", name: "href", widget: "string"}
+      - {label: "Weight", name: "weight", widget: "number"}
+
+  - name: "footer"
+    label: "Footer Details"
+    folder: "site/content/footer"
+    create: false
+    fields:
+      - {label: "Title", name: "title", widget: "string", required: true, default: "main"}
+      - {label: "Copyright Info", name: "copyright", widget: "string", required: false}
+      - {label: "Footer Slogan", name: "slogan", widget: "string", required: false}
+      - name: "icons"
+        label: "Social Media Icon"
+        widget: "list"
+        required: false
+        fields:
+          - {label: "Service Name", name: "title", widget: "string", required: false}
+          - {label: "Service URL", name: "url", widget: "string", required: false}
+          - {label: "Service Icon Available Here: https://material.io/icons/", name: "icon", widget: "string", required: false, default: "explore"}
+          - {label: "Weight", name: "weight", widget: "number", required: false, default: "0"}

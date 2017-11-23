@@ -1,0 +1,35 @@
+
+</main>
+<footer class="page-footer primary-color accent-2">
+  {{ with .Site.GetPage "page" "footer/main.md" }}
+         <div class="container">
+           <div class="row center-align primary-color-text">
+             {{ range sort .Params.icons "weight" }}
+             {{ partial "icon_range" (dict "Icon" . "Color" "secondary-color" "TextColor" "secondary-color-text" "URLClass" "social-media" "IconClass" "fa-lg social-media-icon" "IconBrightness" "accent-2") }}
+             {{ end }}
+
+           </div>
+         </div>
+         <div class="footer-copyright primary-color-text">
+           <div class="container">
+           {{ .Params.copyright }}
+           <a class="primary-color-text  right" href="#!">{{ .Params.slogan|markdownify }}</a>
+           </div>
+         </div>
+     {{ end }}
+       </footer>
+<script src="/js/siema.min.js"></script>
+<script src="/app.js"></script>
+<script src="/js/jquery.min.js"></script>
+<script src="/js/materialize.min.js"></script>
+<script src="/js/jquery.nanogallery2.min.js"></script>
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+<script>
+$(document).ready(function() {
+   $(".button-collapse").sideNav();
+   $(".dropdown-button").dropdown({
+   });
+});
+</script>
+</body>
+</html>

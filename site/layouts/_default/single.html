@@ -1,0 +1,40 @@
+{{ partial "header" . }}
+
+<div class="" style="margin-top: 0.5em;">
+  <div class="row">
+    <div class="col s12">
+      {{ if .Title }}<h2 class="center-align secondary-color-text">{{ .Title }}</h2>{{ end }}
+
+    </div>
+  </div>
+  {{ if .Params.icons }}
+  <div class="row center-align social-media-row">
+    {{ range .Params.icons }}
+    {{ partial "icon_range" (dict "Icon" . "IconBrightness" "darken-4" "IconClass" "fa-fw fa-lg social-media-icon" "URLClass" "social-media-row primary-color") }}
+    {{ end }}
+  </div>
+  {{ end }}
+  <div class="row">
+    {{ if eq .Dir "pages/" }}
+    {{ if .Content }}
+    <div class="col s12 secondary-color-text context-text {{ .Section | urlize }}">
+    {{ .Content }}
+    </div>
+    {{ end }}
+    {{ else }}
+    <div class="col s12 l4 right">
+      <img class="center-image {{ .Section |urlize }}" src="{{ .Params.image | default "/img/default_announcement.jpeg"}}">
+    </div>
+    {{ if .Content }}
+    <div class="col s12 l8 secondary-color-text context-text {{ .Section | urlize }}">
+    {{ .Content }}
+    </div>
+    {{ end }}
+    {{ end }}
+  </div>
+
+
+
+</div>
+
+{{ partial "footer" . }}

@@ -1,0 +1,60 @@
+baseurl = "/"
+languageCode = "en-us"
+title = "MAGStock 8"
+
+
+
+[params]
+  description = "MAGWest is a 3-day festival celebrating video games, video game music, and the culture of people who create them."
+  date = "June 10-12, 2018"
+  primary = "purple"
+  secondary = "red"
+  primaryBrightness = "lighten-2"
+  secondaryBrightness = "darken-3"
+  primaryText = "black-text"
+  secondaryText = "blue-text"
+  primaryTextBrightness = "text-darken-2"
+  secondaryTextBrightness = "text-darken-4"
+
+[[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 100
+
+[[menu.main]]
+    name = "Tickets: $70"
+    url = "/#tickets"
+    weight = 99
+
+[[menu.main]]
+    name = "Music"
+    url = "/"
+    weight = 0
+
+[[menu.main]]
+    name = "Where To Go"
+    url = "/"
+    weight = 0
+
+[[menu.main]]
+    name = "What To Bring"
+    url = "/"
+    weight = 0
+
+[[menu.main]]
+    name = "Rules"
+    url = "/"
+    weight = 0
+
+[[menu.main]]
+    name = "Volunteer"
+    url = "/volunteer"
+
+[[menu.main]]
+    name = "FAQ"
+    url = "/faq"
+
+[[menu.main]]
+    name = "Community"
+    url = "/community"
+    weight = 4

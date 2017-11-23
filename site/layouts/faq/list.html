@@ -1,0 +1,16 @@
+{{ partial "header" . }}
+
+<div class="{{ .Title }} {{ .Section | urlize }}">
+  <h1 class="center-align secondary-color-text">{{ .Title }}</h1>
+  <ul class="faq">
+    {{ range .Pages.ByWeight.Reverse }}
+    <div class="hoverable rounded">
+      <li class="secondary-color-text">{{ .Title }}</li>
+      <ul>
+        <li class="flow-text context-text secondary-color-text">{{ .Content }}</li>
+      </ul>
+    </div>
+    {{ end }}
+  </ul>
+
+{{ partial "footer" . }}

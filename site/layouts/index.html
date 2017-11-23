@@ -1,0 +1,47 @@
+{{ partial "header" . }}
+<div class="front-page">
+  <div class="row page-content">
+    <div class="col s12 secondary-color-text content-text">
+      {{ .Content }}
+    </div>
+  </div>
+  {{ with .Params.section }}
+  {{ range . }}
+  <hr>
+  <div class="row page-content">
+    <p class="title">{{ .Title }}</p>
+    {{ with .Content }}
+    <div class="details">
+      {{ . }}
+    </div>
+    {{ end }}
+  </div>
+  {{ end }}
+  {{ end }}
+  <hr>
+  <div class="row page-content">
+    <p class="title">Where To Go</p>
+  </div>
+  <hr>
+  <div class="row page-content">
+    <p class="title">What To Bring</p>
+  </div>
+  <hr>
+  <div class="row page-content">
+    <p class="title">Rules N' Guidelines</p>
+    <div class="details">
+    </div>
+  </div>
+</div>
+<script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+</script>
+{{ partial "footer" . }}

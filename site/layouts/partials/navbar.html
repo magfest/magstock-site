@@ -1,0 +1,74 @@
+<header>
+  <nav class="nav-extended primary-color">
+    <div class="nav-wrapper">
+      <style scoped>
+      @media only screen and (max-width:992px){
+          .brand-logo{
+            font-size: 2.3vmax !important;
+            text-overflow: ellipsis;
+          }
+        }
+      </style>
+      <a href="{{ .Site.BaseURL }}" class="primary-color-text "><img class="brand-logo" src="/img/logo.png" alt="{{ .Site.Title }}"></a>
+      <a href="#" data-activates="mobile-sidebar" class="button-collapse"><i class="fa fa-bars fa-lg primary-color-text text-darken-4"></i></a>
+        <ul class="desktop-nav right hide-on-med-and-down">
+          {{ range $p := .Site.Menus.main }}
+            {{ if $p.HasChildren }}
+            <ul id="n{{.Identifier}}" class="dropdown-content">
+              {{ range $c := $p.Children }}
+              <li><a href="{{$c.URL}}" class="primary-color-text "> {{ $c.Name }} </a></li>
+              {{ end }}
+            </ul>
+            <li><a class="dropdown-button primary-color-text " data-hover="true" data-beloworigin="true" href="#!" data-activates="n{{$p.Identifier}}">{{ $p.Name }}<i class="fa fa-angle-down right"></i></a></li>
+            {{ else }}
+            <li><a href="{{$p.URL}}" class="primary-color-text "> {{ $p.Name }} </a></li>
+            {{ end }}
+          {{end}}
+        </ul>
+        <ul class="side-nav" id="mobile-sidebar">
+          {{ if (not .Pages) and .Section }}
+            <li><a  href="../" class="primary-color-text ">Go Back</a></li>
+          {{ end }}
+
+          {{ range $p := .Site.Menus.main }}
+          {{ if $p.HasChildren }}
+          <li class="no-padding">
+            <ul class="collapsible collapsible-accordion">
+              <li>
+                <a class="collapsible-header primary-color-text ">{{$p.Name}}<i class="fa fa-angle-down"></i></a>
+                <div class="collapsible-body">
+                  <ul>
+                    {{ range $c := $p.Children }}
+                    <li><a href="{{$c.URL}}" class="primary-color-text "> {{ $c.Name }} </a></li>
+                    {{ end }}
+                    <li><div class="divider"></div></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </li>
+          {{ else }}
+          <li><a href="{{$p.URL}}" class="primary-color-text "> {{ $p.Name }} </a></li>
+          {{ end }}
+          {{end}}
+          {{ with .Site.GetPage "section" "sidebar" }}
+          <li><div class="divider"></div></li>
+          <li><a class="subheader">Useful Links</a></li>
+          {{ range $p := .Pages }}
+            <li><a href="{{$p.Params.href}}" class="primary-color-text "> {{ $p.Title }} </a></li>
+          {{ end }}
+          {{ end }}
+          {{ with .Site.GetPage "section" "announcements" }}
+          <li><div class="divider"></div></li>
+          <li><a class="subheader">Recent Announcements</a></li>
+          {{ range $p := .Pages }}
+            <li><a href="{{$p.URL}}" class="primary-color-text "> {{ $p.Title }} </a></li>
+          {{ end }}
+          {{ end }}
+        </ul>
+    </div>
+    <div class="nav-content center">
+        <p class="nav-content-title primary-color-text">{{ .Site.Title }} | {{ .Site.Params.Date}}</p>
+    </div>
+  </nav>
+</header>
