@@ -1,37 +1,31 @@
 {{ partial "header" . }}
 <div class="front-page">
+  {{ if isset . "Content"}}
   <div class="row page-content">
     <div class="col s12 secondary-color-text content-text">
       {{ .Content }}
     </div>
   </div>
-  {{ with .Params.section }}
-  {{ range . }}
+  {{ end }}
+  {{ if isset .Params "section" }}
+  {{ if isset . "Content"}}
   <hr>
+  {{ end }}
+  {{ range $index, $s := .Params.section }}
+  {{ if $index }}
+  <hr>
+  {{ end }}
   <div class="row page-content">
-    <p class="title">{{ .Title }}</p>
-    {{ with .Content }}
+    <p class="title">{{ $s.title }}</p>
+    {{ with $s.body }}
     <div class="details">
-      {{ . }}
+      {{ .|markdownify }}
     </div>
     {{ end }}
   </div>
   {{ end }}
   {{ end }}
-  <hr>
-  <div class="row page-content">
-    <p class="title">Where To Go</p>
-  </div>
-  <hr>
-  <div class="row page-content">
-    <p class="title">What To Bring</p>
-  </div>
-  <hr>
-  <div class="row page-content">
-    <p class="title">Rules N' Guidelines</p>
-    <div class="details">
-    </div>
-  </div>
+
 </div>
 <script>
   if (window.netlifyIdentity) {

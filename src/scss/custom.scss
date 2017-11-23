@@ -155,9 +155,27 @@ ul.faq{
 }
 
 .page-content .title{
-  font-size: 3em;
+  font-size: 4em;
   @extend .secondary-color-text;
   text-transform: capitalize;
+}
+.page-content .details{
+  padding-left: 2em;
+  margin-top: -2em;
+  @extend .secondary-color-text
+}
+
+.page-content .details li {
+  @extend .secondary-color-text;
+  display: list-item;
+}
+
+.details ul li {
+  list-style-type: square;
+  margin-left: 2em;
+}
+.details ol li{
+  list-style-type: decimal;
 }
 
 
