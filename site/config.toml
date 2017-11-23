@@ -2,8 +2,6 @@ baseurl = "/"
 languageCode = "en-us"
 title = "MAGStock 8"
 
-
-
 [params]
   description = "MAGWest is a 3-day festival celebrating video games, video game music, and the culture of people who create them."
   date = "June 10-12, 2018"
@@ -20,17 +18,17 @@ title = "MAGStock 8"
 
 [[menu.main]]
     name = "Where To Go"
-    url = "/"
+    url = "/#where-to-go"
     weight = 3
 
 [[menu.main]]
     name = "What To Bring"
-    url = "/"
+    url = "/#what-to-bring"
     weight = 4
 
 [[menu.main]]
     name = "Rules"
-    url = "/"
+    url = "/#rules-n-guidelines"
     weight = 5
 
 [[menu.main]]

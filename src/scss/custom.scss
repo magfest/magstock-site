@@ -14,7 +14,7 @@ $primary-color-dark: false;
 @if not $primary-color-dark {
   $primary-color-dark: darken($primary-color, 15%);
 }
-$secondary-color: color("black", "lighten-1");
+$secondary-color: color("grey", "darken-4");
 $success-color: color("green", "base");
 $error-color: color("red", "base");
 
