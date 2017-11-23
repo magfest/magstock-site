@@ -8,6 +8,10 @@ section:
 
       * Items 
       * Other Items
+  - title: Rules N' Guidelines
+    body: |-
+      1. Don't do this
+      2. Do do that.
 ---
 ##### MAGWest 2: Theme Coming Soon!
 - - -
