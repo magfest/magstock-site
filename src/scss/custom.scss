@@ -167,6 +167,17 @@ ul.faq{
   text-decoration: underline;
 }
 
+.navbar-fixed{
+  margin-bottom: 2.5em;
+}
+
+a.anchor{
+  display: block;
+    position: relative;
+    top: -10em;
+    visibility: hidden;
+}
+
  hr{
   border-color: $primary-color;
   border-width: thick;

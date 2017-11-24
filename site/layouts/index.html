@@ -16,7 +16,8 @@
   <hr>
   {{ end }}
   <div class="row page-content">
-    <p class="title center-align" id="{{ $s.title|urlize}}">{{ $s.title }}</p>
+    <a class="anchor" id="{{ $s.title|urlize}}"></a>
+    <p class="title center-align" >{{ $s.title }}</p>
     {{ with $s.body }}
     <div class="details">
       {{ .|markdownify }}

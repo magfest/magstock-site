@@ -9,7 +9,7 @@ title = "MAGStock 8"
 [[menu.main]]
     name = "Tickets"
     url = "/#tickets"
-    weight = 1
+    weight = 4
 
 [[menu.main]]
     name = "Music"
