@@ -16,6 +16,7 @@ section:
       allowfullscreen></iframe>
 
       </div>
+    weight: '48'
   - title: What To Bring
     body: >-
       #### Camping Essentials
@@ -79,6 +80,7 @@ section:
       * Canopy
 
       * Consoles & Other Electronics (At your own risk!)
+    weight: '49'
   - title: Rules N' Guidelines
     body: >-
       1. Use common sense and be courteous. Also, be social! You’re here to hang
@@ -128,5 +130,105 @@ section:
       14. Read and abide by the Small Country Campground rules.
 
       15. Also... No defecating in the showers, because, dude, really?
+    weight: '50'
+  - title: Volunteer
+    body: >-
+      Volunteering for MAGStock is easy! Our events are built on volunteer
+      participation, so we encourage every attendee to get involved. However if
+      it's your first year at MAGStock we recommend you NOT volunteer so that
+      you'll have more time to enjoy all the awesomeness without needing to
+      worry about being in a specific place at a particular time.\
+
+      \
+
+      This page will tell you what you need to do if you'd like to join the
+      MAGStock team
+
+
+      Volunteers are required to purchase admission to the event, the only
+      volunteer compensation is some items from the support swag items. And of
+      course the thanks from your grateful organizers who love it when awesome
+      people pitch in to do great things!
+
+
+      If you have any questions about the above, feel free to contact
+      <mailto:magstock@magstock.org>.
+    weight: '50'
+  - title: Steps to Volunteer
+    body: >-
+      #### Step 1: Begin the registration process
+
+
+      We'll need to begin collecting your information, so go to the
+      [pre-registration](https://magstock7.uber.magfest.org/uber/preregistration/form)
+      page where you can begin entering your basic details.
+
+
+      #### Step 2: Check the "Want to Volunteer?" checkbox
+
+
+      The checkbox appears about half-way down the page. Once you check this,
+      additional options will become available.
+
+
+      ![null](http://lh3.googleusercontent.com/mrpHLRknYgt8Qk_yJN8s8TDI0vXUghY93kmj-dvMTYLbsrtl6fTab72GEDBEl12AIwsxJtEmrhjw0S1SWfl5adiVGA8L=s600)
+
+
+      #### Step 3: Select the areas you want to help
+
+
+      ![null](http://lh3.googleusercontent.com/4DZ37bLv7w2k44nvz4DQSDEYeRlf56pQVRm8zRV83ub2ip6g4LtTxtOAQNvviNaAiwThqVNvyOm-N3kq1LR28m9i3VvA=s1200)
+
+
+      MAGStock has just a few departments working together in tight coordination
+      to keep everything running smoothly. Check off whichever department
+      interests you most!
+
+
+      * Cat Herding - Helps to show people to their assigned campsites, manage
+      vehicle traffic (Including parking areas) and in general gets involved
+      with crowd management issues.
+
+      * Food - Works with the staff in charge of food to prepare, serve and
+      clean up for each meal.
+
+      * Standby/Misc - General catch all to help with whatever the current needs
+      are (If you have attended a MAGFest event before , this is equivalent to
+      the staff support position.)
+
+      * Music - All the things involved with the musical performances at
+      MAGStock - stage hands, lights, cables, sound. (Holding the tent up when
+      it rains).
+
+      * Registration - checking in attendees, showing them where on the map
+      their site is, this also includes selling MAGStock Merch and passing out
+      pre-paid shirts / supporter gear.
+
+      * Slip 'n Slide - Setting up and running the slip and slide with the
+      planning team.
+
+
+      #### Step 4: Complete and pay for your registration
+
+
+
+
+      ![null](http://lh3.googleusercontent.com/m-jjBklByVAsLTsoyk77KGMk_G8bGMCxgRkUsSbUFjEBoEtvCI5nn5TRqwEOiEacHlRisrX8k6jElxDdM-eW240aC3A=s1200)
+
+
+      #### \
+
+      Step 5: You're all confirmed!
+
+
+      That's all you need to do to register yourself as a volunteer! As the
+      event approaches (usually 2 months beforehand), our Staff Operations
+      department (STOPS) will send you a Volunteer Checklist where you can
+      confirm your attendance, and sign up for shifts in your department.
+
+
+      If you have any questions about the above, feel free to contact
+      <mailto:magstock@magstock.org>.
+    weight: '50'
 ---
 
