@@ -17,6 +17,9 @@ section:
 
       </div>
     weight: '48'
+  - title: Tickets!
+    body: Buy your tickets now!
+    weight: '50'
   - title: What To Bring
     body: >-
       #### Camping Essentials
@@ -228,3 +231,4 @@ section:
       <mailto:magstock@magstock.org>.
     weight: '50'
 ---
+
