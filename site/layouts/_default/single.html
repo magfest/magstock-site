@@ -17,7 +17,7 @@
   <div class="row">
     {{ if eq .Dir "pages/" }}
     {{ if .Content }}
-    <div class="col s12 secondary-color-text context-text {{ .Section | urlize }}">
+    <div class="col s12 container secondary-color-text context-text {{ .Section | urlize }}">
     {{ .Content }}
     </div>
     {{ end }}

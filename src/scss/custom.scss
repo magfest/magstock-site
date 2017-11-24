@@ -62,11 +62,20 @@ body *{
   font-family: "Yoster Island";
 }
 
+
 .nav-content-title{
   margin-top: auto;
   margin-bottom: auto;
   font-size: 2em;
   height: 100%;
+}
+
+.faq-content * {
+  padding-left: 1em;
+}
+
+li.context-text {
+  list-style-position: inside;
 }
 
 .social-media-icon:hover{
@@ -129,7 +138,6 @@ ul.faq{
   }
   ul > li {
     font-size: 1em;
-    margin-left: 2em;
     list-style-type: disc;
 
 
@@ -137,7 +145,6 @@ ul.faq{
 }
 
 .context-text.pages li {
-  margin-left: 2em;
 }
 .rounded{
   border-radius: 5px;
@@ -147,8 +154,20 @@ ul.faq{
   padding-left: 2em;
   padding-top: 1em;
 }
+.faq-question{
+  border-color: $primary-color;
+  border-width: thick;
+  border-style: solid;
+  padding-left: 1em;
+  padding-top: 0.5em;
+  padding-right: 1em;
+}
 
-.front-page > hr{
+.faq-title{
+  text-decoration: underline;
+}
+
+ hr{
   border-color: $primary-color;
   border-width: thick;
   border-style: dashed;
@@ -170,12 +189,17 @@ ul.faq{
   display: list-item;
 }
 
+.details ul {
+  padding-left: 40px;
+}
+
 .details ul li {
   list-style-type: square;
-  margin-left: 2em;
+  list-style-position: outside;
 }
 .details ol li{
   list-style-type: decimal;
+  list-style-position: outside;
 }
 
 

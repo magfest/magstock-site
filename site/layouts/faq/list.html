@@ -1,13 +1,16 @@
 {{ partial "header" . }}
 
-<div class="{{ .Title }} {{ .Section | urlize }}">
+<div class="container {{ .Title }} {{ .Section | urlize }}">
   <h1 class="center-align secondary-color-text">{{ .Title }}</h1>
   <ul class="faq">
-    {{ range .Pages.ByWeight.Reverse }}
-    <div class="hoverable rounded">
-      <li class="secondary-color-text">{{ .Title }}</li>
+    {{ range $index, $p := .Pages.ByWeight }}
+    {{ if ne $index 0}}
+    <hr>
+    {{ end }}
+    <div class="faq-question">
+      <li class="secondary-color-text faq-title">{{ $p.Title }}</li>
       <ul>
-        <li class="flow-text context-text secondary-color-text">{{ .Content }}</li>
+        <span class="flow-text faq-content context-text secondary-color-text">{{ $p.Content }}</span>
       </ul>
     </div>
     {{ end }}

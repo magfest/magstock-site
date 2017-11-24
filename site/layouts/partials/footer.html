@@ -12,8 +12,8 @@
          </div>
          <div class="footer-copyright primary-color-text">
            <div class="container">
-           {{ .Params.copyright }}
-           <a class="primary-color-text  right" href="#!">{{ .Params.slogan|markdownify }}</a>
+           <span>{{ .Params.copyright }}</span>
+           <span class="context-text right">{{ .Params.slogan|markdownify }}</span>
            </div>
          </div>
      {{ end }}

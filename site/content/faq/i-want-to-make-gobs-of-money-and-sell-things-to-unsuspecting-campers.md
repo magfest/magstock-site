@@ -1,6 +1,6 @@
 ---
 title: I want to make gobs of money and sell things to unsuspecting campers!
-weight: '50'
+weight: 1
 ---
 Good news! We have no idea how we're going to handle this!
 

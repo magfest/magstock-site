@@ -177,7 +177,7 @@ section:
       ![null](http://lh3.googleusercontent.com/mrpHLRknYgt8Qk_yJN8s8TDI0vXUghY93kmj-dvMTYLbsrtl6fTab72GEDBEl12AIwsxJtEmrhjw0S1SWfl5adiVGA8L=s600)
 
 
-      {{ < /div >}}
+      {{< /div >}}
 
 
       #### Step 3: Select the areas you want to help
@@ -245,4 +245,3 @@ section:
       <mailto:magstock@magstock.org>.
     weight: '50'
 ---
-
