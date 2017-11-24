@@ -7,7 +7,7 @@ title = "MAGStock 8"
   date = "June 10-12, 2018"
 
 [[menu.main]]
-    name = "Tickets: $70"
+    name = "Tickets"
     url = "/#tickets"
     weight = 1
 
@@ -33,7 +33,8 @@ title = "MAGStock 8"
 
 [[menu.main]]
     name = "Volunteer"
-    url = "/volunteer"
+    url = "/#volunteer"
+    weight = 5
 
 [[menu.main]]
     name = "FAQ"
@@ -42,5 +43,5 @@ title = "MAGStock 8"
 
 [[menu.main]]
     name = "Community"
-    url = "/community"
+    url = "https://www.facebook.com/events/183014812171586/"
     weight = 7
