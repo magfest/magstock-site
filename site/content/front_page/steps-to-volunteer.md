@@ -3,6 +3,7 @@ title: Steps To Volunteer
 anchor: helpOut
 weight: '25'
 ---
+
 #### Step 1: Begin the registration process
 
 We'll need to begin collecting your information, so go to the [pre-registration](https://magstock7.uber.magfest.org/uber/preregistration/form) page where you can begin entering your basic details.
@@ -11,10 +12,14 @@ We'll need to begin collecting your information, so go to the [pre-registration]
 
 The checkbox appears about half-way down the page. Once you check this, additional options will become available.
 
+{{< center >}}
 ![null](http://lh3.googleusercontent.com/mrpHLRknYgt8Qk_yJN8s8TDI0vXUghY93kmj-dvMTYLbsrtl6fTab72GEDBEl12AIwsxJtEmrhjw0S1SWfl5adiVGA8L=s600)
+{{< /center >}}
 #### Step 3: Select the areas you want to help
 
+{{< center >}}
 ![null](http://lh3.googleusercontent.com/4DZ37bLv7w2k44nvz4DQSDEYeRlf56pQVRm8zRV83ub2ip6g4LtTxtOAQNvviNaAiwThqVNvyOm-N3kq1LR28m9i3VvA=s1200)
+{{< /center >}}
 
 MAGStock has just a few departments working together in tight coordination to keep everything running smoothly. Check off whichever department interests you most!
 
@@ -27,8 +32,9 @@ MAGStock has just a few departments working together in tight coordination to ke
 
 #### Step 4: Complete and pay for your registration
 
-
+{{< center >}}
 ![null](http://lh3.googleusercontent.com/m-jjBklByVAsLTsoyk77KGMk_G8bGMCxgRkUsSbUFjEBoEtvCI5nn5TRqwEOiEacHlRisrX8k6jElxDdM-eW240aC3A=s1200)
+{{< /center >}}
 
 
 Step 5: You're all confirmed!

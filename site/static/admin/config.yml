@@ -81,6 +81,16 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Body", name: "body", widget: "markdown", required: false}
       - {label: "URL", name: "url", widget: "string"}
 
+  - name: "front_page"
+    label: "Front Page Sections"
+    folder: "site/content/front_page"
+    create: true
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Body", name: "body", widget: "markdown", required: false}
+      - {label: "Anchor", name: "anchor", widget: "string", required: false}
+      - {label: "Weight", name: "weight", widget: "number", default: 50}
+
   - name: "index"
     label: "Homepage"
     folder: "site/content"
@@ -89,14 +99,6 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Title", name: "title", widget: "string", tagname: "h1"}
       - {label: "Body", name: "body", widget: "markdown", required: false}
       - {label: "URL", name: "url", widget: "string"}
-      - name: "section"
-        label: "Front Page Content Section"
-        widget: "list"
-        required: false
-        fields:
-          - {label: "Title", name: "title", widget: "string", required: true}
-          - {label: "Content", name: "body", widget: "markdown", required: false}
-          - {label: "Weight", name: "weight", widget: "number", default: "50", required: false}
 
   - name: "sidebar"
     label: "Sidebar Items"
