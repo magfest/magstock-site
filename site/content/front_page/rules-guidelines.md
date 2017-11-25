@@ -1,7 +1,7 @@
 ---
 title: Rules & Guidelines
 anchor: rules
-weight: 50
+weight: '15'
 ---
 1. Use common sense and be courteous. Also, be social! You’re here to hang out and meet people, so introduce yourself to others. If you see someone struggling, help them out.
 2. We decide the camping spots. We’re trying to keep track of where people are to help people find each other. So don’t move or spread into your neighbor’s area unless you get permission from both them and us.
