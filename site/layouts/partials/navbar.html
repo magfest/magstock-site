@@ -18,7 +18,7 @@
             {{ if $p.HasChildren }}
             <ul id="n{{.Identifier}}" class="dropdown-content">
               {{ range $c := $p.Children }}
-              <li><a href="{{$c.URL}}" class="primary-color-text "> {{ $c.Name }} </a></li>
+              <li class="primary-color"><a href="{{$c.URL}}" class="primary-color-text "> {{ $c.Name }} </a></li>
               {{ end }}
             </ul>
             <li><a class="dropdown-button primary-color-text " data-hover="true" data-beloworigin="true" href="#!" data-activates="n{{$p.Identifier}}">{{ $p.Name }}<i class="fa fa-angle-down right"></i></a></li>
@@ -42,7 +42,7 @@
                 <div class="collapsible-body">
                   <ul>
                     {{ range $c := $p.Children }}
-                    <li><a href="{{$c.URL}}" class="primary-color-text "> {{ $c.Name }} </a></li>
+                    <li class="primary-color"><a href="{{$c.URL}}" class="primary-color-text "> {{ $c.Name }} </a></li>
                     {{ end }}
                     <li><div class="divider"></div></li>
                   </ul>
